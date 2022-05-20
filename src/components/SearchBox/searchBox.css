@@ -1,0 +1,25 @@
+.searchBox {
+  display: flex;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.searchBox__input {
+  height: 40px;
+  font-size: 1.2rem;
+  outline: none;
+  flex: 1;
+  border-style: none;
+  padding-left: 0.5rem;
+}
+
+.searchBox__button {
+  height: 40px;
+  width: 40px;
+  border-style: none;
+}
+
+.searchBox:focus-within {
+  border: 2px solid #ffb86c;
+}
