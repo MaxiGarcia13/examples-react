@@ -12,7 +12,7 @@ import './app.css';
 const App = () => {
   return (
     <>
-      <main className='app'>
+      <main className='main'>
         <h1>React JS Examples</h1>
         <p>
           This is a simple project that shows some examples of how we can change states, handle effects and how to use
@@ -27,8 +27,13 @@ const App = () => {
           <HandleStatesWithReduxAndSagaFC />
         </Provider>
       </main>
-      <footer>
-        <a href='#'>🧑🏼‍💻 Repository</a>
+      <footer className='footer'>
+        <a href='https://github.com/MaxiGarcia13/examples-react' target='_blank'>
+          🏠 Repository
+        </a>
+        <a href='https://www.linkedin.com/in/maximilianogarcia13/' target='_blank'>
+          🧑🏼‍💻🧉 Maximiliano Garcia.
+        </a>
       </footer>
     </>
   );
