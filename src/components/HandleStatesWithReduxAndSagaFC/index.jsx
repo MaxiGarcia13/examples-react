@@ -15,7 +15,11 @@ const HandleStatesWithReduxAndSagaFC = () => {
   };
 
   return (
-    <Section title='Handle states with redux and saga' description='Functional Component' dataToShow={{ searchText }}>
+    <Section
+      title='Handle states with redux and saga'
+      description='Functional Component'
+      dataToShow={{ searchText, fetching }}
+    >
       <SearchBox placeholder='Typing searchbox' onChange={onChange} />
       {fetching === true ? (
         <span>Loading... </span>
