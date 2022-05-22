@@ -4,7 +4,6 @@ import HandleStateClass from '../HandleStateClass';
 import HandleEffectsClass from '../HandleEffectsClass';
 import HandleStatesWithReduxFC from '../HandleStatesWithReduxFC';
 import HandleStatesWithReduxAndSagaFC from '../HandleStatesWithReduxAndSagaFC';
-
 import { Provider } from 'react-redux';
 import store from '../../redux';
 import './app.css';
@@ -12,12 +11,14 @@ import './app.css';
 const App = () => {
   return (
     <>
-      <main className='main'>
+      <header className='header'>
         <h1>React JS Examples</h1>
         <p>
           This is a simple project that shows some examples of how we can change states, handle effects and how to use
           Redux and how to use the saga a little bit.
         </p>
+      </header>
+      <main className='main'>
         <HandleStateFC />
         <HandleStateClass />
         <HandleEffectsFC />
