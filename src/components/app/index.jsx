@@ -8,6 +8,7 @@ import HandleStatesWithReduxAndSagaFC from '../handle-states-with-redux-and-saga
 import HandleStatesWithUseReducerFC from '../handle-states-with-use-reducer';
 import HandleContextWithUseContext from '../handle-states-with-context/with-use-context';
 import HandleContextWithConsumer from '../handle-states-with-context/with-consumer';
+import HandleStatesWithUseReducerClass from '../handle-states-with-redux-class';
 
 import { ContextProvider } from '../handle-states-with-context/context';
 import store from '../../redux';
@@ -42,6 +43,9 @@ const App = () => {
         <ContextProvider>
           <HandleContextWithConsumer />
         </ContextProvider>
+        <Provider store={store}>
+          <HandleStatesWithUseReducerClass />
+        </Provider>
       </main>
       <footer className='footer'>
         <a href='https://github.com/MaxiGarcia13/examples-react' target='_blank'>
