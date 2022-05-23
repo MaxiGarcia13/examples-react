@@ -17,10 +17,10 @@ const HandleStatesWithReduxFC = () => {
   return (
     <Section
       title='Handle states with redux'
-      description='It use useSelector and useDispatch'
-      dataToShow={{ searchText }}
+      description='Redux is a predictable state container for JavaScript apps. It is usually preferable to use it when you have complex state logic.'
+      dataToShow={{ searchText, items }}
     >
-      <SearchBox placeholder='Typing searchbox' onChange={onChange} />
+      <SearchBox placeholder='Type to search' onChange={onChange} />
 
       <List
         items={items}

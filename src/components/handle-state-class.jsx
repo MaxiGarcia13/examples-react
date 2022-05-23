@@ -33,9 +33,13 @@ class HandleStateClass extends React.Component {
 
   render() {
     return (
-      <Section title='Handle states' description='It use setState' dataToShow={{ searchText: this.state.searchText }}>
-        <SearchBox placeholder='Typing searchbox' onChange={this.onChange} />
-        <SearchBox placeholder='Submit searchbox' onSubmit={this.onSubmit} />
+      <Section
+        title='Handle states'
+        description='You can define the state in the contructor of the class and then you can modify yours state with setState.'
+        dataToShow={{ searchText: this.state.searchText, items: this.state.itemsFiltered }}
+      >
+        <SearchBox placeholder='Type to search' onChange={this.onChange} />
+        <SearchBox placeholder='Press enter o click button to search' onSubmit={this.onSubmit} />
 
         <List items={this.state.itemsFiltered} ItemComponent={this.renderItem} />
       </Section>

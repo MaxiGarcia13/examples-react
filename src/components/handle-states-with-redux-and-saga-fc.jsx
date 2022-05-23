@@ -16,11 +16,11 @@ const HandleStatesWithReduxAndSagaFC = () => {
 
   return (
     <Section
-      title='Handle states with redux and saga'
-      description='It use useSelector, useDispatch and debounce'
-      dataToShow={{ searchText, fetching }}
+      title='Handle asynchronous task with saga'
+      description='Saga is a middleware for redux and It allows you to manage asynchronous approaches,  parallel execution, task concurrency, task racing, task cancellation, and more.'
+      dataToShow={{ searchText, fetching, items }}
     >
-      <SearchBox placeholder='Typing searchbox' onChange={onChange} />
+      <SearchBox placeholder='Type to search' onChange={onChange} />
       {fetching === true ? (
         <span>Loading... </span>
       ) : (

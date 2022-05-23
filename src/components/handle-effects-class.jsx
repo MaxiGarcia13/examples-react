@@ -45,10 +45,10 @@ class HandleEffectsClass extends React.Component {
     return (
       <Section
         title='Handle effects'
-        description='It use componentDidMount, componentDidUpdate and setState'
-        dataToShow={{ searchText: this.state.searchText }}
+        description='For manage effects in class component yo can use componentDidMount, componentDidUpdate or componentWillUnmount.'
+        dataToShow={{ searchText: this.state.searchText, items: this.state.itemsFiltered }}
       >
-        <SearchBox placeholder='Typing searchbox' onChange={this.onChange} />
+        <SearchBox placeholder='Type to search' onChange={this.onChange} />
 
         <List items={this.state.itemsFiltered} ItemComponent={this.renderItem} />
       </Section>

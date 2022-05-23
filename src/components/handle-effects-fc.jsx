@@ -25,8 +25,12 @@ const HandleEffectsFC = () => {
   }, [searchText]);
 
   return (
-    <Section title='Handle effects' description='It use useState and useEffect' dataToShow={{ searchText }}>
-      <SearchBox placeholder='Typing searchbox' onChange={onChange} />
+    <Section
+      title='Handle effects'
+      description='The useEffect hook allows you to manage effects on the component, such as when the component was mounted, when some state was updated, or when the component was unmounted.'
+      dataToShow={{ searchText, items: itemsFiltered }}
+    >
+      <SearchBox placeholder='Type to search' onChange={onChange} />
 
       <List
         items={itemsFiltered}

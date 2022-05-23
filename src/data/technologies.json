@@ -10,25 +10,5 @@
   {
     "title": "Vue JS",
     "id": 3
-  },
-  {
-    "title": "Lit JS",
-    "id": 4
-  },
-  {
-    "title": "Ember JS",
-    "id": 5
-  },
-  {
-    "title": "Next JS",
-    "id": 6
-  },
-  {
-    "title": "Gatsby JS",
-    "id": 7
-  },
-  {
-    "title": "Nuxt JS",
-    "id": 8
   }
 ]

@@ -21,9 +21,13 @@ const HandleStateFC = () => {
   };
 
   return (
-    <Section title='Handle states' description='It use useState' dataToShow={{ searchText }}>
-      <SearchBox placeholder='Typing searchbox' onChange={onChange} />
-      <SearchBox placeholder='Submit searchbox' onSubmit={onSubmit} />
+    <Section
+      title='Handle states'
+      description='The useState hook allows you to manage the state of the component.'
+      dataToShow={{ searchText, items: itemsFiltered }}
+    >
+      <SearchBox placeholder='Type to search' onChange={onChange} />
+      <SearchBox placeholder='Press enter o click button to search' onSubmit={onSubmit} />
 
       <List
         items={itemsFiltered}

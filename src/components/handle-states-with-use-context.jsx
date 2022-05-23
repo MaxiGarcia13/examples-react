@@ -25,11 +25,11 @@ const HandleStatesWithUseReducerFC = () => {
 
   return (
     <Section
-      title='Handle states with useReducer'
+      title='Handle states with useContext'
       description='The useReducer hook allows you to manage the states. It is usually preferable to useState when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one.'
-      dataToShow={{ searchText: state.searchText }}
+      dataToShow={{ searchText: state.searchText, items: state.items }}
     >
-      <SearchBox placeholder='Typing searchbox' onChange={onChange} />
+      <SearchBox placeholder='Type to search' onChange={onChange} />
 
       <List
         items={state.items}
