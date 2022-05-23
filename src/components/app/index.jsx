@@ -18,6 +18,9 @@ const App = () => {
   return (
     <>
       <header className='header'>
+        <a href='https://github.com/MaxiGarcia13/examples-react' target='_blank'>
+          🏠 Repository
+        </a>
         <h1 className='title'>What is React JS?</h1>
         <p>
           It is a JavaScript library for building user interfaces, it allow to write in declarative way and Build
@@ -46,13 +49,36 @@ const App = () => {
         <Provider store={store}>
           <HandleStatesWithUseReducerClass />
         </Provider>
+        <h2 className='subtitle'>Glossary</h2>
+        <p>If you want to know more about this you can visit the official docs.</p>
+
+        <ul className='glossary'>
+          <li>
+            <a href='https://reactjs.org/' target='_blank'>
+              React JS
+            </a>
+          </li>
+          <li>
+            <a href='https://redux.js.org/' target='_blank'>
+              Redux JS
+            </a>
+          </li>
+          <li>
+            <a href='https://react-redux.js.org/' target='_blank'>
+              React Redux JS
+            </a>
+          </li>
+          <li>
+            <a href='https://redux-saga.js.org/' target='_blank'>
+              Saga JS
+            </a>
+          </li>
+        </ul>
       </main>
       <footer className='footer'>
-        <a href='https://github.com/MaxiGarcia13/examples-react' target='_blank'>
-          🏠 Repository
-        </a>
+        by
         <a href='https://www.linkedin.com/in/maximilianogarcia13/' target='_blank'>
-          🧑🏼‍💻🧉 Maximiliano Garcia.
+          Maximiliano Garcia Mortigliengo.
         </a>
       </footer>
     </>

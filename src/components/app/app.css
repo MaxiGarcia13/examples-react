@@ -34,3 +34,12 @@ a,
 a:visited {
   color: #8be9fd;
 }
+
+.glossary {
+  list-style: none;
+  padding: 0;
+}
+
+.glossary li {
+  padding: 0.5rem 0;
+}
