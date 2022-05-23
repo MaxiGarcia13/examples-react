@@ -1,12 +1,14 @@
 .main {
   min-height: 100vh;
-  padding: 1rem 0;
+  padding-bottom: 0;
 }
 
 .header,
 .main {
-  max-width: 900px;
+  max-width: 930px;
   margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .footer {
@@ -20,4 +22,8 @@
 .footer a:visited {
   padding: 0 0.5rem;
   color: #8be9fd;
+}
+
+.title {
+  color: #50fa7b;
 }
