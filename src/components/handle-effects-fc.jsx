@@ -4,7 +4,7 @@ import List from './list';
 import SearchBox from './search-box';
 import Section from './section';
 import ITEMS from '../data/technologies.json';
-import { filterDataByText } from '../utils/search';
+import { filterDataByText, SEARCH_DELAY } from '../utils/search';
 
 const HandleEffectsFC = () => {
   const [searchText, setSearchText] = useState('');
