@@ -19,11 +19,11 @@
 }
 
 .title {
-  color: #50fa7b;
+  color: var(--green);
 }
 
 .subtitle {
-  color: #bd93f9;
+  color: var(--purple);
 }
 
 .footer a {
@@ -32,7 +32,7 @@
 
 a,
 a:visited {
-  color: #8be9fd;
+  color: var(--ligth-blue);
 }
 
 .glossary {
