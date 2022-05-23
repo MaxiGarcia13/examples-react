@@ -18,12 +18,19 @@
   align-items: center;
 }
 
-.footer a,
-.footer a:visited {
-  padding: 0 0.5rem;
-  color: #8be9fd;
-}
-
 .title {
   color: #50fa7b;
+}
+
+.subtitle {
+  color: #bd93f9;
+}
+
+.footer a {
+  padding: 0 0.5rem;
+}
+
+a,
+a:visited {
+  color: #8be9fd;
 }

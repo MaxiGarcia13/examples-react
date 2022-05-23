@@ -5,6 +5,7 @@ import HandleStateClass from '../handle-state-class';
 import HandleEffectsClass from '../handle-effects-class';
 import HandleStatesWithReduxFC from '../handle-states-with-redux-fc';
 import HandleStatesWithReduxAndSagaFC from '../handle-states-with-redux-and-saga-fc';
+import HandleStatesWithUseReducerFC from '../handle-states-with-use-reducer';
 import store from '../../redux';
 import './app.css';
 
@@ -12,22 +13,23 @@ const App = () => {
   return (
     <>
       <header className='header'>
-        <h1>React JS Examples</h1>
+        <h1 className='title'>What is React JS?</h1>
         <p>
-          This is a simple project that shows some examples of how we can change states, handle effects and how to use
-          Redux and how to use the saga a little bit.
+          It is a JavaScript library for building user interfaces, it allow to write in declarative way and Build
+          encapsulated components that manage their own state. <a href='https://reactjs.org/'>more info</a>
         </p>
       </header>
       <main className='main'>
-        <h2 className='title'>Functional component</h2>
+        <h2 className='subtitle'>Functional component</h2>
         <HandleStateFC />
         <HandleEffectsFC />
-        <h2 className='title'>Redux and Sagas</h2>
+        <HandleStatesWithUseReducerFC />
+        <h2 className='subtitle'>Redux and Sagas</h2>
         <Provider store={store}>
           <HandleStatesWithReduxFC />
           <HandleStatesWithReduxAndSagaFC />
         </Provider>
-        <h2 className='title'>Class component (avoid to use)</h2>
+        <h2 className='subtitle'>Class component (avoid to use)</h2>
         <HandleStateClass />
         <HandleEffectsClass />
       </main>
