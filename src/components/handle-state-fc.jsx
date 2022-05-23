@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Item from './_item';
-import List from './_list';
-import SearchBox from './_search-box';
-import Section from './_section';
+import Item from './item';
+import List from './list';
+import SearchBox from './search-box';
+import Section from './section';
 import ITEMS from '../data/technologies.json';
 import { filterDataByText } from '../utils/search';
 

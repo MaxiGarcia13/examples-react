@@ -5,7 +5,7 @@ import SearchBox from '../search-box';
 import Section from '../section';
 import ITEMS from '../../data/technologies.json';
 import { filterDataByText } from '../../utils/search';
-import 'handle-states-with-context.css';
+import './handle-states-with-context.css';
 
 const initialState = { searchText: '', items: ITEMS };
 

@@ -1,7 +1,7 @@
-import Item from './_item';
-import List from './_list';
-import SearchBox from './_search-box';
-import Section from './_section';
+import Item from './item';
+import List from './list';
+import SearchBox from './search-box';
+import Section from './section';
 import { useSelector, useDispatch } from 'react-redux';
 import { changeSearchText } from '../redux/actions/search';
 import { searchSelector } from '../redux/selectors/search';
