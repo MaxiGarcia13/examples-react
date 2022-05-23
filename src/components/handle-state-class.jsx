@@ -1,10 +1,10 @@
 import React from 'react';
-import Item from '../Item';
-import List from '../List';
-import SearchBox from '../SearchBox';
-import Section from '../Section';
-import ITEMS from '../../data/technologies.json';
-import { filterDataByText } from '../../utils/search';
+import Item from './item';
+import List from './list';
+import SearchBox from './search-box';
+import Section from './section';
+import ITEMS from '../data/technologies.json';
+import { filterDataByText } from '../utils/search';
 
 class HandleStateClass extends React.Component {
   constructor(props) {
@@ -33,11 +33,7 @@ class HandleStateClass extends React.Component {
 
   render() {
     return (
-      <Section
-        title='Handle states with react'
-        description='Class components'
-        dataToShow={{ searchText: this.state.searchText }}
-      >
+      <Section title='Handle states' description='It use setState' dataToShow={{ searchText: this.state.searchText }}>
         <SearchBox placeholder='Typing searchbox' onChange={this.onChange} />
         <SearchBox placeholder='Submit searchbox' onSubmit={this.onSubmit} />
 

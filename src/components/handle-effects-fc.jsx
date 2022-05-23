@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import Item from '../Item';
-import List from '../List';
-import SearchBox from '../SearchBox';
-import Section from '../Section';
-import ITEMS from '../../data/technologies.json';
-import { filterDataByText } from '../../utils/search';
+import Item from './item';
+import List from './list';
+import SearchBox from './search-box';
+import Section from './section';
+import ITEMS from '../data/technologies.json';
+import { filterDataByText } from '../utils/search';
 
 const HandleEffectsFC = () => {
   const [searchText, setSearchText] = useState('');
@@ -25,7 +25,7 @@ const HandleEffectsFC = () => {
   }, [searchText]);
 
   return (
-    <Section title='Handle effects with react' description='Functional Component' dataToShow={{ searchText }}>
+    <Section title='Handle effects' description='It use useState and useEffect' dataToShow={{ searchText }}>
       <SearchBox placeholder='Typing searchbox' onChange={onChange} />
 
       <List

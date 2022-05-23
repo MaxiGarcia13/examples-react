@@ -1,10 +1,10 @@
 import React from 'react';
-import Item from '../Item';
-import List from '../List';
-import SearchBox from '../SearchBox';
-import Section from '../Section';
-import ITEMS from '../../data/technologies.json';
-import { filterDataByText, SEARCH_DELAY } from '../../utils/search';
+import Item from './item';
+import List from './list';
+import SearchBox from './search-box';
+import Section from './section';
+import ITEMS from '../data/technologies.json';
+import { filterDataByText, SEARCH_DELAY } from '../utils/search';
 
 class HandleEffectsClass extends React.Component {
   timer = null;
@@ -44,8 +44,8 @@ class HandleEffectsClass extends React.Component {
   render() {
     return (
       <Section
-        title='Handle effects with react'
-        description='Class components'
+        title='Handle effects'
+        description='It use componentDidMount, componentDidUpdate and setState'
         dataToShow={{ searchText: this.state.searchText }}
       >
         <SearchBox placeholder='Typing searchbox' onChange={this.onChange} />

@@ -8,7 +8,6 @@
 }
 
 .section__title {
-  color: #50fa7b;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -17,7 +16,7 @@
   font-size: 0.8rem;
   padding: 1rem 0;
   margin: 0;
-  color: #ff79c6;
+  color: #fafafa;
 }
 
 .section__content {
@@ -25,7 +24,7 @@
 }
 
 .section__columns {
-  padding: 0 1rem;
+  padding-right: 1rem;
 }
 
 .section__code {

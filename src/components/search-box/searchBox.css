@@ -7,7 +7,7 @@
 
 .searchBox__input {
   height: 40px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   outline: none;
   flex: 1;
   border-style: none;
@@ -22,4 +22,9 @@
 
 .searchBox:focus-within {
   border: 2px solid #ffb86c;
+}
+
+.searchBox__input,
+.searchBox__button {
+  border-radius: 0;
 }

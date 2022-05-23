@@ -1,4 +1,4 @@
-import Highlighted from '../Highlighted';
+import Highlighted from '../highlighted';
 
 const Item = (props) => {
   return (

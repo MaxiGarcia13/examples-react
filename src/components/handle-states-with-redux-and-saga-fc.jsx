@@ -1,10 +1,10 @@
-import Item from '../Item';
-import List from '../List';
-import SearchBox from '../SearchBox';
-import Section from '../Section';
+import Item from './item';
+import List from './list';
+import SearchBox from './search-box';
+import Section from './section';
 import { useSelector, useDispatch } from 'react-redux';
-import { onSearch } from '../../redux/actions/searchWithSaga';
-import { searchWithSagaSelector } from '../../redux/selectors/searchWithSaga';
+import { onSearch } from '../redux/actions/searchWithSaga';
+import { searchWithSagaSelector } from '../redux/selectors/searchWithSaga';
 
 const HandleStatesWithReduxAndSagaFC = () => {
   const { searchText, items, fetching } = useSelector(searchWithSagaSelector);
@@ -17,7 +17,7 @@ const HandleStatesWithReduxAndSagaFC = () => {
   return (
     <Section
       title='Handle states with redux and saga'
-      description='Functional Component'
+      description='It use useSelector, useDispatch and debounce'
       dataToShow={{ searchText, fetching }}
     >
       <SearchBox placeholder='Typing searchbox' onChange={onChange} />

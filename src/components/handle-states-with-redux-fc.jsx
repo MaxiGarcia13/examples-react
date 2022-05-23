@@ -1,10 +1,10 @@
-import Item from '../Item';
-import List from '../List';
-import SearchBox from '../SearchBox';
-import Section from '../Section';
+import Item from './item';
+import List from './list';
+import SearchBox from './search-box';
+import Section from './section';
 import { useSelector, useDispatch } from 'react-redux';
-import { changeSearchText } from '../../redux/actions/search';
-import { searchSelector } from '../../redux/selectors/search';
+import { changeSearchText } from '../redux/actions/search';
+import { searchSelector } from '../redux/selectors/search';
 
 const HandleStatesWithReduxFC = () => {
   const { searchText, items } = useSelector(searchSelector);
@@ -15,7 +15,11 @@ const HandleStatesWithReduxFC = () => {
   };
 
   return (
-    <Section title='Handle states with redux' description='Functional Component' dataToShow={{ searchText }}>
+    <Section
+      title='Handle states with redux'
+      description='It use useSelector and useDispatch'
+      dataToShow={{ searchText }}
+    >
       <SearchBox placeholder='Typing searchbox' onChange={onChange} />
 
       <List
