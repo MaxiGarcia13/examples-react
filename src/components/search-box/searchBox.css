@@ -21,7 +21,7 @@
 }
 
 .searchBox:focus-within {
-  border: 2px solid #ffb86c;
+  border: 2px solid var(--orange);
 }
 
 .searchBox__input,

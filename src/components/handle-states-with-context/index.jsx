@@ -1,10 +1,11 @@
 import { useReducer } from 'react';
-import Item from './item';
-import List from './list';
-import SearchBox from './search-box';
-import Section from './section';
-import ITEMS from '../data/technologies.json';
-import { filterDataByText } from '../utils/search';
+import Item from '../item';
+import List from '../list';
+import SearchBox from '../search-box';
+import Section from '../section';
+import ITEMS from '../../data/technologies.json';
+import { filterDataByText } from '../../utils/search';
+import 'handle-states-with-context.css';
 
 const initialState = { searchText: '', items: ITEMS };
 
@@ -17,7 +18,7 @@ function reducer(state, action) {
   }
 }
 
-const HandleStatesWithUseReducerFC = () => {
+const HandleStatesWithContext = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const onChange = (value) => {
     dispatch({ type: 'onChange', searchText: value });
@@ -25,8 +26,8 @@ const HandleStatesWithUseReducerFC = () => {
 
   return (
     <Section
-      title='Handle states with useContext'
-      description='The useReducer hook allows you to manage the states. It is usually preferable to useState when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one.'
+      title='Handle states with Context'
+      description='Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.'
       dataToShow={{ searchText: state.searchText, items: state.items }}
     >
       <SearchBox placeholder='Type to search' onChange={onChange} />
@@ -41,4 +42,4 @@ const HandleStatesWithUseReducerFC = () => {
   );
 };
 
-export default HandleStatesWithUseReducerFC;
+export default HandleStatesWithContext;
