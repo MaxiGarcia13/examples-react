@@ -1,0 +1,9 @@
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list__item {
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
