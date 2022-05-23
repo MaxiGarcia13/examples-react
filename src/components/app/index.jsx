@@ -6,6 +6,10 @@ import HandleEffectsClass from '../handle-effects-class';
 import HandleStatesWithReduxFC from '../handle-states-with-redux-fc';
 import HandleStatesWithReduxAndSagaFC from '../handle-states-with-redux-and-saga-fc';
 import HandleStatesWithUseReducerFC from '../handle-states-with-use-reducer';
+import HandleContextWithUseContext from '../handle-states-with-context/with-use-context';
+import HandleContextWithConsumer from '../handle-states-with-context/with-consumer';
+
+import { ContextProvider } from '../handle-states-with-context/context';
 import store from '../../redux';
 import './app.css';
 
@@ -24,6 +28,9 @@ const App = () => {
         <HandleStateFC />
         <HandleEffectsFC />
         <HandleStatesWithUseReducerFC />
+        <ContextProvider>
+          <HandleContextWithUseContext />
+        </ContextProvider>
         <h2 className='subtitle'>Redux and Sagas</h2>
         <Provider store={store}>
           <HandleStatesWithReduxFC />
@@ -32,6 +39,9 @@ const App = () => {
         <h2 className='subtitle'>Class component (avoid to use)</h2>
         <HandleStateClass />
         <HandleEffectsClass />
+        <ContextProvider>
+          <HandleContextWithConsumer />
+        </ContextProvider>
       </main>
       <footer className='footer'>
         <a href='https://github.com/MaxiGarcia13/examples-react' target='_blank'>

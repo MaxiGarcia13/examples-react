@@ -1,9 +1,19 @@
-[data-theme='light-theme'] {
+[data-theme='light'] {
   --green: #50fa7b;
   --ligth-blue: #8be9fd;
   --purple: #bd93f9;
   --orange: #ffb86c;
   --font-color: #282a36;
-  --background-color: #fafafa;
+  --background-color: #eee;
   --background-color-sc: #f8f8f2;
+}
+
+[data-theme='golden'] {
+  --green: #50fa7b;
+  --ligth-blue: #8be9fd;
+  --purple: #bd93f9;
+  --orange: #ffb86c;
+  --font-color: #282a36;
+  --background-color: #ffb86c;
+  --background-color-sc: #ffc689;
 }

@@ -1,13 +1,14 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, createContext } from 'react';
 
-const themes = {
-  light: 'light-theme',
-  dark: 'dark-theme',
+export const themes = {
+  light: 'light',
+  dark: 'dark',
+  golden: 'golden',
 };
 
 const defaultTheme = themes.dark;
 
-export const MyContext = React.createContext(defaultTheme);
+export const MyContext = createContext(defaultTheme);
 
 export const ContextProvider = (props) => {
   const themeRef = useRef(null);
@@ -25,5 +26,3 @@ export const ContextProvider = (props) => {
     </MyContext.Provider>
   );
 };
-
-export const ContextConsumer = (props) => <MyContext.Consumer>{props.children}</MyContext.Consumer>;

@@ -2,7 +2,8 @@
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 4px;
-  background-color: #44475a;
+  background-color: var(--background-color-sc);
+  color: var(--font-color);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
@@ -16,7 +17,6 @@
   font-size: 0.8rem;
   padding: 1rem 0;
   margin: 0;
-  color: #fafafa;
 }
 
 .section__content {
@@ -28,6 +28,6 @@
 }
 
 .section__code {
-  background-color: #282a36;
+  background-color: var(--background-color);
   padding: 1rem;
 }
